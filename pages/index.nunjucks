@@ -1,0 +1,71 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div class="block block-fill-height">
+  <div class="block-sm-middle block-xs-top video-container">
+    <video autoplay preload class="video-content">
+      <source id="mp4"  src="assets/vid/1.mp4"  type="video/mp4" />
+    </video>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="matter-logo"></div>
+          <h2 class="block-title m-b-md">
+            <span>Presents:</span>
+          </h2>
+        </div>
+
+        <div class="col-xs-12 col-md-5 col-md-offset-3 right-rail">
+          <h1 class="block-title m-b-md">
+            <span>Total Power Move</span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row meta">
+        <div class="col-md-1 js-rsvpContainer right-rail-xs">
+          <span class="js-notification hidden notification-text">Copied!</span>
+          <h3><a href="#" class="primary-link js-rsvpLink">RSVP</a></h3>
+        </div>
+
+        <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-0 meta-info">
+          <p class="hidden-xs">
+            A night of readings, discussions, and performances<br><br>
+            Bathhouse Studios<br>
+            East Village, New York City<br>
+            November 2, 2016<br>
+            7:30 PM<br>
+            Doors at 6PM<br><br>
+
+            Cocktails and catering by The Meat Hook<br><br>
+
+            Directed by Adrienne Campell-Holt
+          </p>
+
+          <p class="visible-xs meta-info">
+            A night of readings, discussions, and performances<br><br>
+            Bathhouse Studios<br>
+            November 2, 2016<br>
+            7:30 PM<br>
+          </p>
+        </div>
+
+        <div class="col-md-2 col-md-offset-1 meta-speakers hidden-xs">
+          <p>
+            Himanshu
+            Fariha Roisin
+            Joon Chung
+            Tyler Ford
+            The Dance Cartel
+            Bandana Splits
+            And surprise guests!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
