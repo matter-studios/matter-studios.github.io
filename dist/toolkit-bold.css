@@ -8843,6 +8843,10 @@ img.zoom-img {
 .right-rail {
   float: right;
 }
+.right-rail-xs {
+  position: absolute;
+  bottom: 0;
+}
 .notification-info {
   color: #f0f;
 }
@@ -8891,6 +8895,7 @@ h1.block-title {
   color: #f0f;
   font-size: 16px;
   vertical-align: bottom;
+  line-height: 1.1em;
 }
 .meta-speakers {
   color: #f0f;
