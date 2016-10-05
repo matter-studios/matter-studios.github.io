@@ -8920,7 +8920,7 @@ h1.block-title {
     font-size: 205px;
   }
 }
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) {
   .video-content {
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
@@ -8967,6 +8967,17 @@ h1.block-title {
   .right-rail-xs.is-selected {
     right: -160px;
     bottom: 214px;
+  }
+}
+@media (max-width: 768px) and (orientation: landscape) {
+  .video-content {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
   }
 }
 @media (max-width: 414px) and (min-width: 376px) and (orientation: portrait) {
