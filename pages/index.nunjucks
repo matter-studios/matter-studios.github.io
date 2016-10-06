@@ -26,7 +26,7 @@
 
       <div class="row meta">
         <div class="col-md-1 js-rsvpContainer right-rail-xs">
-          <span class="js-notification hidden notification-text">Copied!</span>
+          <span class="js-notification hidden notification-text">Email us at:</span>
           <h3>
             <a href="#" class="primary-link js-rsvpLink">RSVP</a>
             <span class="primary-link hidden js-rsvpEmail">rsvp@matter.com</span>
