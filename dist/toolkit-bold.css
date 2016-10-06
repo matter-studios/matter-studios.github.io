@@ -8898,6 +8898,7 @@ h1.block-title {
   line-height: 1.1em;
 }
 .meta-speakers {
+  list-style-type: none;
   color: #f0f;
   font-size: 28px;
   vertical-align: bottom;
@@ -8922,15 +8923,15 @@ h1.block-title {
 }
 @media (max-width: 768px) {
   .video-content {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg) scale(1.2);
+    -moz-transform: rotate(270deg) scale 1.2;
+    -ms-transform: rotate(270deg) scale 1.2;
     -webkit-transform-origin: top top;
     -moz-transform-origin: top top;
     -ms-transform-origin: top top;
-    width: 105vh;
+    width: 100vh;
     height: 100vh;
-    left: -160px;
+    left: -150px;
     top: 0;
   }
   h1.block-title {
@@ -8967,6 +8968,9 @@ h1.block-title {
   .right-rail-xs.is-selected {
     right: -160px;
     bottom: 214px;
+  }
+  .block-fill-height {
+    height: 95vh;
   }
 }
 @media (max-width: 768px) and (orientation: landscape) {
