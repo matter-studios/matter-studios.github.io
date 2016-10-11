@@ -8910,6 +8910,24 @@ h1.block-title {
   bottom: 0;
   width: 100%;
 }
+.sold-out {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  z-index: 100;
+  opacity: 0.97;
+}
+.sold-out.hidden-xs {
+  background-image: url(../assets/img/sold_outDesktop.png);
+  width: 1200px;
+  height: 700px;
+}
+.sold-out.hidden-lg {
+  background-image: url(../assets/img/sold_outMobile.png);
+  width: 375px;
+  height: 667px;
+}
 /*
  * Mobile styles
  */

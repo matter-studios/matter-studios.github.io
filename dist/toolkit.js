@@ -2369,10 +2369,10 @@ if (!isMobile) {
 
   videoPlayer.play()
 } else {
-  setTimeout(function () {
+  setInterval(function () {
     var gifToPlay = videosList[Math.floor(Math.random() * videosList.length)]
     gifPlayer.setAttribute('src', 'assets/img/' + gifToPlay + '.gif')
-  }, 10000)
+  }, 5000)
 }
 
 rsvpLink.addEventListener('click', function (e) {
