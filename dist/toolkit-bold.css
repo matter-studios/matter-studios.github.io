@@ -8847,8 +8847,9 @@ img.zoom-img {
   position: absolute;
   bottom: 0;
 }
-.notification-info {
+.notification-text {
   color: #f0f;
+  font-size: 26px;
 }
 .container {
   margin-left: 10px;
@@ -8946,6 +8947,15 @@ h1.block-title {
     width: 100vh;
     height: 100vh;
     left: -150px;
+    top: 0;
+  }
+  .gif-bg {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    width: 150vh;
+    height: 100vh;
+    left: -180px;
     top: 0;
   }
   h1.block-title {

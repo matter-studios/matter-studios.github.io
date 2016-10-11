@@ -4,7 +4,8 @@
 
 <div class="block block-fill-height">
   <div class="block-sm-middle block-xs-top video-container">
-    <video autoplay preload class="video-content">
+    <img src="assets/img/1.gif" class="gif-bg video-content hidden-lg js-gif">
+    <video autoplay preload class="video-content hidden-xs js-video">
       <source id="mp4"  src="assets/vid/1.mp4"  type="video/mp4" />
     </video>
 
@@ -26,7 +27,7 @@
 
       <div class="row meta">
         <div class="col-md-1 js-rsvpContainer right-rail-xs">
-          <span class="js-notification hidden notification-text">Email us at:</span>
+          <span class="js-notification hidden notification-text">Email us:</span>
           <h3>
             <a href="#" class="primary-link js-rsvpLink">RSVP</a>
             <span class="primary-link hidden js-rsvpEmail">rsvp@matter.com</span>
