@@ -3,8 +3,8 @@
 {% block content %}
 
 <div class="block block-fill-height">
-  <div class="sold-out hidden-xs"></div>
-  <div class="sold-out hidden-lg"></div>
+  <div class="sold-out hidden-xs hidden-sm"></div>
+  <div class="sold-out hidden-lg hidden-md"></div>
 
   <div class="block-sm-middle block-xs-top video-container">
     <img src="assets/img/1.gif" class="gif-bg video-content hidden-lg js-gif">
