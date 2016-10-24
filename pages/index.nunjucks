@@ -2,76 +2,33 @@
 
 {% block content %}
 
-<div class="block block-fill-height">
-  <div class="sold-out hidden-xs hidden-sm"></div>
-  <div class="sold-out hidden-lg hidden-md"></div>
+<div class="block">
+  <div class="block-sm-middle block-xs-top">
+    <div class="matter-logo"></div>
+    <h1 class="block-title m-b-md">
+      <span>F.A.Q.</span>
+    </h1>
+  </div>
+</div>
 
-  <div class="block-sm-middle block-xs-top video-container">
-    <img src="assets/img/1.gif" class="gif-bg video-content hidden-lg js-gif">
-    <video autoplay preload class="video-content hidden-xs js-video">
-      <source id="mp4"  src="assets/vid/1.mp4"  type="video/mp4" />
-    </video>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="matter-logo"></div>
-          <h2 class="block-title m-b-md">
-            <span>Presents:</span>
-          </h2>
+<div class="container faq">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol class="itemList">
+        {% for row in rows %}
+        <div class="item">
+          <li class="q q{{loop.index}} js-question" data-toggle="collapse" data-target="#a{{loop.index}}" data-question-number="{{loop.index}}">{{row.question}}</li>
+          <div class="a-wrapper collapse" id="a{{loop.index}}">
+            <div class="a a{{loop.index}}">
+              {{row.answer|safe}}
+            </div>
+          </div>
+          <div class="js-effect{{loop.index}} hidden effect">
+            <img class=effect-img src="./assets/img/swoosh2.svg">
+          </div>
         </div>
-
-        <div class="col-xs-12 col-md-5 col-md-offset-3 right-rail">
-          <h1 class="block-title m-b-md">
-            <span>Total Power Move</span>
-          </h1>
-        </div>
-      </div>
-
-      <div class="row meta">
-        <div class="col-md-1 js-rsvpContainer right-rail-xs">
-          <span class="js-notification hidden notification-text">Email us:</span>
-          <h3>
-            <a href="#" class="primary-link js-rsvpLink">RSVP</a>
-            <span class="primary-link hidden js-rsvpEmail">rsvp@matter.com</span>
-          </h3>
-        </div>
-
-        <div class="col-lg-2 col-md-3 col-md-offset-5 col-sm-3 col-sm-offset-5 col-xs-6 col-xs-offset-0 meta-info">
-          <p class="hidden-xs meta-info">
-            A night of readings, discussions, and performances<br><br>
-            Bathhouse Studios<br>
-            East Village, New York City<br>
-            November 2, 2016<br>
-            7:00 PM<br>
-            Doors at 6:30PM<br><br>
-
-            Cocktails and catering by The Meat Hook<br><br>
-
-            Directed by Adrienne Campbell-Holt
-          </p>
-
-          <p class="visible-xs meta-info">
-            A night of readings, discussions, and performances<br><br>
-            Bathhouse Studios<br>
-            November 2, 2016<br>
-            7:00 PM<br>
-          </p>
-        </div>
-
-        <div class="col-md-3 col-lg-offset-1 hidden-xs">
-          <ul class="meta-speakers">
-            <li>Himanshu</li>
-            <li>Fariha Róisín</li>
-            <li>Joon Chung</li>
-            <li>Tyler Ford</li>
-            <li>Molly Soda</li>
-            <li>Dance Cartel</li>
-            <li>The Bandana Splits</li>
-            <li>And surprise guests!</li>
-          </ul>
-        </div>
-      </div>
+        {% endfor %}
+      </ol>
     </div>
   </div>
 </div>

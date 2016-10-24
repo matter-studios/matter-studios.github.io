@@ -2335,83 +2335,53 @@
 
 }(jQuery);
 
-var videoPlayer = document.getElementsByClassName('js-video')[0]
-var gifPlayer = document.getElementsByClassName('js-gif')[0]
-var rsvpLink = document.getElementsByClassName('js-rsvpLink')[0]
-var notification = document.getElementsByClassName('js-notification')[0]
-var rsvpContainer = document.getElementsByClassName('js-rsvpContainer')[0]
-var isMobile = navigator.userAgent.indexOf('Mobile') > 0
-var videosList = [
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
-  '6',
-  '7',
-  '8',
-  '9',
-  '10',
-  '11'
-]
+var questions = document.getElementsByClassName('js-question')
 
-if (!isMobile) {
-  videoPlayer.addEventListener('ended', function () {
-    this.pause()
-
-    var videoToPlay = videosList[Math.floor(Math.random() * videosList.length)]
-    document.querySelector('#mp4').setAttribute('src', 'assets/vid/' + videoToPlay + '.mp4')
-
-    this.load()
-    this.play()
-
-  }, false)
-
-  videoPlayer.play()
-} else {
-  setInterval(function () {
-    var gifToPlay = videosList[Math.floor(Math.random() * videosList.length)]
-    gifPlayer.setAttribute('src', 'assets/img/' + gifToPlay + '.gif')
-  }, 5000)
+for (var i = 0; i < questions.length; i++) {
+  var q = questions[i]
+  q.addEventListener('click', toggleAnswer)
 }
 
-rsvpLink.addEventListener('click', function (e) {
-  var email = document.getElementsByClassName('js-rsvpEmail')[0]
+function toggleAnswer() {
+  var questionNumber = this.getAttribute('data-question-number')
+  var itemEl = this.parentElement.classList.add('is-expanded')
+  var answerEl = document.getElementById('a' + questionNumber)
+  var svgDiv = document.getElementsByClassName('js-effect' + questionNumber)[0]
 
-  if (!isMobile) {
-    var emailText = 'rsvp@matter.com'
-    var textArea = document.createElement('textarea')
-    textArea.style.position = 'fixed'
-    textArea.style.top = 0
-    textArea.style.left = 0
-    textArea.style.width = '2em'
-    textArea.style.height = '2em'
-    textArea.style.padding = 0
-    textArea.style.border = 'none'
-    textArea.style.outline = 'none'
-    textArea.style.boxShadow = 'none'
-    textArea.style.background = 'transparent'
-
-    textArea.value = emailText
-    document.body.appendChild(textArea)
-
-    textArea.select()
-    document.execCommand('copy', false, null)
-    document.body.removeChild(textArea)
+  if (answerEl.className.indexOf('collapse in') < 0) {
+    // answerEl.classList.remove('fade')
+    addEffect(svgDiv, questionNumber)
   } else {
-    var selection = window.getSelection()
-    var range = document.createRange()
-    range.selectNodeContents(email)
-    selection.removeAllRanges()
-    selection.addRange(range)
-    $(email).select()
+    // answerEl.classList.add('fade')
+    removeEffect(svgDiv, questionNumber)
   }
+}
 
-  rsvpContainer.classList.add('is-selected')
-  notification.classList.remove('hidden')
-  email.classList.remove('hidden')
-  rsvpLink.classList.add('hidden')
-})
+function addEffect(svgDiv, questionNumber) {
+  var svgList = [
+    'poof',
+    'pop',
+    'slam1',
+    'slam2',
+    'sparkles',
+    'swoosh1',
+    'swoosh2',
+    'swoosh3',
+    'swoosh4',
+    'swoosh5',
+    'type',
+    'wow'
+  ]
+
+  var svgId = svgList[Math.floor(Math.random() * svgList.length)]
+  svgDiv.firstElementChild.setAttribute('src', 'assets/img/' + svgId + '.svg')
+  svgDiv.classList.remove('hidden')
+}
+
+function removeEffect(svgDiv, questionNumber) {
+  svgDiv.classList.add('hidden')
+  svgDiv.firstElementChild.removeAttribute('src')
+}
 
 +function ($) {
   'use strict';

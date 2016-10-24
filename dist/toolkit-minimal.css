@@ -259,7 +259,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Agipo Bold Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Agipo Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #000000;
@@ -360,7 +360,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Agipo Bold Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Agipo Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   line-height: 1.2;
   color: inherit;
@@ -5330,7 +5330,7 @@ body {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Agipo Bold Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Agipo Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5448,7 +5448,7 @@ body {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Agipo Bold Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Agipo Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8830,214 +8830,177 @@ img.zoom-img {
 }
 .matter-logo {
   background-image: url(../assets/img/matterlogo_rgb.svg);
-  width: 700px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 108%;
-  position: absolute;
-  top: 0;
-  left: 20px;
+  background-size: contain;
   z-index: 100;
-}
-.right-rail {
-  float: right;
-}
-.right-rail-xs {
   position: absolute;
-  bottom: 0;
-}
-.notification-text {
-  color: #f0f;
-  font-size: 26px;
-}
-.container {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .block {
   padding: 0;
 }
-.block-fill-height {
+h1.block-title {
+  font-size: 380px;
+  line-height: 0.8em;
+  margin-top: 250px;
+}
+.q {
+  font-size: 90px;
+  line-height: 1em;
+  margin-bottom: 20px;
+  display: list-item;
+  cursor: pointer;
+}
+.a-wrapper {
+  margin-left: -100px;
+}
+.a {
+  font-size: 40px;
+  line-height: 1.1em;
+  color: #f0f;
+  margin-bottom: 60px;
+}
+.a.fade {
+  opacity: 0;
+  visibility: hidden;
+  margin-bottom: 0;
+  pointer-events: none;
+  max-height: 0;
+  -webkit-transition: visibility 0s linear 600ms, max-height 0s, opacity 600ms;
+          transition: visibility 0s linear 600ms, max-height 0s, opacity 600ms;
+}
+.a76.fade {
+  display: none;
+}
+.link {
+  color: #f0f;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #000;
+}
+.pitchForm {
+  display: block;
+  width: 100%;
   height: 100vh;
 }
-.video-container {
+.item {
   position: relative;
-  bottom: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
 }
-.video-content {
-  width: 100%;
-  z-index: 0;
+.effect {
+  width: 300px;
   position: absolute;
-  bottom: 0;
+  top: 0;
+  right: 0;
 }
-h2.block-title {
-  padding-top: 200px;
-  font-size: 70px;
+.game {
+  width: 800px;
+  height: 600px;
 }
-h1.block-title {
-  font-size: 260px;
-  text-align: right;
-  line-height: 0.8em;
+.effect-img {
+  -webkit-animation: pop 3s ease alternate infinite;
+          animation: pop 3s ease alternate infinite;
 }
-.primary-link {
-  font-size: 60px;
-  text-transform: uppercase;
-  color: #f0f;
+@-webkit-keyframes pop {
+  20% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
-.primary-link:hover {
-  color: #f0f;
-}
-.meta-info {
-  color: #f0f;
-  font-size: 16px;
-  vertical-align: bottom;
-  line-height: 1.1em;
-}
-.meta-speakers {
-  list-style-type: none;
-  color: #f0f;
-  font-size: 28px;
-  vertical-align: bottom;
-  line-height: 1.2em;
-}
-.meta {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.sold-out {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  z-index: 100;
-  opacity: 0.97;
-  width: 100%;
-  height: 100%;
-}
-.sold-out.hidden-xs {
-  background-image: url(../assets/img/sold_outDesktop.png);
-}
-.sold-out.hidden-lg {
-  background-image: url(../assets/img/sold_outMobile.png);
+@keyframes pop {
+  20% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
 /*
  * Mobile styles
  */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .video-content {
-    height: 100vh;
-    -webkit-transform: rotate(270deg) scale(2);
-    -moz-transform: rotate(270deg) scale 2;
-    -ms-transform: rotate(270deg) scale 2;
-  }
-  h1.block-title {
-    font-size: 190px;
-    margin-top: -200px;
-  }
-}
-@media screen and (min-width: 1023px) and (max-width: 1400px) {
-  .video-content {
-    height: 100vh;
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale 1.4;
-    -ms-transform: scale 1.4;
-  }
-  h1.block-title {
-    font-size: 205px;
-  }
-}
 @media (max-width: 767px) {
-  .video-content {
-    -webkit-transform: rotate(270deg) scale(1.2);
-    -moz-transform: rotate(270deg) scale 1.2;
-    -ms-transform: rotate(270deg) scale 1.2;
-    -webkit-transform-origin: top top;
-    -moz-transform-origin: top top;
-    -ms-transform-origin: top top;
-    width: 100vh;
-    height: 100vh;
-    left: -150px;
-    top: 0;
-  }
-  .gif-bg {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    width: 150vh;
-    height: 100vh;
-    left: -180px;
-    top: 0;
+  .itemList {
+    -webkit-padding-start: 70px;
   }
   h1.block-title {
-    font-size: 100px;
-    line-height: 0.9em;
-    margin-top: -30px;
-  }
-  h2.block-title {
-    padding-top: 50px;
-    font-size: 55px;
+    font-size: 120px;
+    margin-top: 120px;
+    margin-left: 20px;
   }
   .matter-logo {
-    width: 320px;
-    height: 155px;
-    left: 10px;
-  }
-  .meta {
-    position: static;
-  }
-  .meta-info {
-    margin: 0;
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-  }
-  .right-rail-xs {
-    position: absolute;
-    right: 0;
-    bottom: 40px;
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-  }
-  .right-rail-xs.is-selected {
-    right: -160px;
-    bottom: 214px;
-  }
-  .block-fill-height {
-    height: 95vh;
-  }
-}
-@media (max-width: 768px) and (orientation: landscape) {
-  .video-content {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    width: 100%;
-    height: 100vh;
-    left: 0;
+    background-position: top;
     top: 0;
   }
-}
-@media (max-width: 414px) and (min-width: 376px) and (orientation: portrait) {
+  .q {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .a {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.3em;
+  }
+  .a-wrapper {
+    margin-left: -40px;
+  }
+  .a img {
+    max-width: 280px;
+  }
+  .effect {
+    width: 100px;
+  }
+  .game {
+    width: 100%;
+    height: 400px;
+  }
   .video-content {
-    width: 100vh;
+    width: 100%;
+  }
+  .pitchForm {
+    height: 80vh;
   }
 }
 @media (max-width: 320px) {
   h1.block-title {
-    font-size: 100px;
+    font-size: 80px;
   }
-  .matter-logo {
-    width: 280px;
+  .q {
+    font-size: 25px;
   }
-  .video-content {
-    width: 110vh;
+  .a {
+    font-size: 15px;
+  }
+  .effect {
+    width: 60px;
+  }
+  .itemList {
+    -webkit-padding-start: 50px;
+  }
+}
+@media (min-width: 2560px) {
+  .container {
+    width: 2300px;
+  }
+  h1.block-title {
+    font-size: 880px;
+  }
+  .q {
+    font-size: 120px;
+  }
+  .a {
+    font-size: 80px;
+  }
+  .effect {
+    right: 50%;
+    top: -100px;
   }
 }
 h1.text-uppercase,
