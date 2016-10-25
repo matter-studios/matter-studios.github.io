@@ -8842,16 +8842,220 @@ img.zoom-img {
   padding: 0;
 }
 h1.block-title {
-  font-size: 380px;
+  font-size: 420px;
   line-height: 0.8em;
   margin-top: 250px;
 }
 .q {
-  font-size: 90px;
+  font-size: 100px;
   line-height: 1em;
   margin-bottom: 20px;
   display: list-item;
   cursor: pointer;
+}
+.q9 {
+  font-size: 98px;
+}
+.q10 {
+  font-size: 97px;
+}
+.q11 {
+  font-size: 96px;
+}
+.q12 {
+  font-size: 95px;
+}
+.q13 {
+  font-size: 94px;
+}
+.q14 {
+  font-size: 93px;
+}
+.q15 {
+  font-size: 92px;
+}
+.q16 {
+  font-size: 91px;
+}
+.q17 {
+  font-size: 90px;
+}
+.q18 {
+  font-size: 89px;
+}
+.q19 {
+  font-size: 88px;
+}
+.q20 {
+  font-size: 87px;
+}
+.q21 {
+  font-size: 86px;
+}
+.q22 {
+  font-size: 85px;
+}
+.q23 {
+  font-size: 84px;
+}
+.q24 {
+  font-size: 83px;
+}
+.q25 {
+  font-size: 82px;
+}
+.q26 {
+  font-size: 81px;
+}
+.q27 {
+  font-size: 80px;
+}
+.q28 {
+  font-size: 79px;
+}
+.q29 {
+  font-size: 78px;
+}
+.q30 {
+  font-size: 77px;
+}
+.q31 {
+  font-size: 76px;
+}
+.q32 {
+  font-size: 75px;
+}
+.q33 {
+  font-size: 74px;
+}
+.q34 {
+  font-size: 73px;
+}
+.q35 {
+  font-size: 72px;
+}
+.q36 {
+  font-size: 71px;
+}
+.q37 {
+  font-size: 70px;
+}
+.q38 {
+  font-size: 69px;
+}
+.q39 {
+  font-size: 68px;
+}
+.q40 {
+  font-size: 67px;
+}
+.q41 {
+  font-size: 66px;
+}
+.q42 {
+  font-size: 65px;
+}
+.q43 {
+  font-size: 64px;
+}
+.q44 {
+  font-size: 63px;
+}
+.q45 {
+  font-size: 62px;
+}
+.q46 {
+  font-size: 61px;
+}
+.q47 {
+  font-size: 60px;
+}
+.q48 {
+  font-size: 59px;
+}
+.q49 {
+  font-size: 58px;
+}
+.q50 {
+  font-size: 57px;
+}
+.q51 {
+  font-size: 56px;
+}
+.q52 {
+  font-size: 55px;
+}
+.q53 {
+  font-size: 54px;
+}
+.q54 {
+  font-size: 53px;
+}
+.q55 {
+  font-size: 52px;
+}
+.q56 {
+  font-size: 51px;
+}
+.q57 {
+  font-size: 50px;
+}
+.q58 {
+  font-size: 49px;
+}
+.q59 {
+  font-size: 48px;
+}
+.q60 {
+  font-size: 47px;
+}
+.q61 {
+  font-size: 46px;
+}
+.q62 {
+  font-size: 45px;
+}
+.q63 {
+  font-size: 44px;
+}
+.q64 {
+  font-size: 43px;
+}
+.q65 {
+  font-size: 42px;
+}
+.q66 {
+  font-size: 41px;
+}
+.q67 {
+  font-size: 40px;
+}
+.q68 {
+  font-size: 39px;
+}
+.q69 {
+  font-size: 38px;
+}
+.q70 {
+  font-size: 37px;
+}
+.q71 {
+  font-size: 36px;
+}
+.q72 {
+  font-size: 35px;
+}
+.q73 {
+  font-size: 34px;
+}
+.q74 {
+  font-size: 33px;
+}
+.q75 {
+  font-size: 32px;
+}
+.q76 {
+  font-size: 31px;
 }
 .a-wrapper {
   margin-left: -100px;
@@ -8862,29 +9066,29 @@ h1.block-title {
   color: #f0f;
   margin-bottom: 60px;
 }
-.a.fade {
-  opacity: 0;
-  visibility: hidden;
-  margin-bottom: 0;
-  pointer-events: none;
-  max-height: 0;
-  -webkit-transition: visibility 0s linear 600ms, max-height 0s, opacity 600ms;
-          transition: visibility 0s linear 600ms, max-height 0s, opacity 600ms;
+.image--team {
+  margin-bottom: 20px;
 }
-.a76.fade {
-  display: none;
+.image {
+  width: 100%;
 }
 .link {
   color: #f0f;
   text-decoration: underline;
 }
 .link:hover {
-  color: #000;
+  color: #f0f;
+  position: relative;
 }
-.pitchForm {
+.link:hover:after {
+  position: absolute;
+  content: url(../assets/img/wow.svg);
   display: block;
-  width: 100%;
-  height: 100vh;
+  top: -55px;
+  left: 80px;
+  width: 30%;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
 }
 .item {
   position: relative;
@@ -8900,17 +9104,24 @@ h1.block-title {
   height: 600px;
 }
 .effect-img {
-  -webkit-animation: pop 3s ease alternate infinite;
-          animation: pop 3s ease alternate infinite;
+  animation: pop 900ms ease;
+  -webkit-animation: pop 900ms ease;
 }
 @-webkit-keyframes pop {
   20% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  100% {
+  50% {
     -webkit-transform: scale(2);
             transform: scale(2);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    display: none;
   }
 }
 @keyframes pop {
@@ -8918,10 +9129,29 @@ h1.block-title {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  100% {
+  50% {
     -webkit-transform: scale(2);
             transform: scale(2);
   }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    display: none;
+  }
+}
+.pitchForm {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+.questionForm {
+  width: 100%;
+  height: 600px;
+  display: block;
+  border: none;
 }
 /*
  * Mobile styles
@@ -8948,10 +9178,214 @@ h1.block-title {
     margin-bottom: 20px;
     line-height: 1.3em;
   }
+  .q9 {
+    font-size: 44.6px;
+  }
+  .q10 {
+    font-size: 44.2px;
+  }
+  .q11 {
+    font-size: 43.8px;
+  }
+  .q12 {
+    font-size: 43.4px;
+  }
+  .q13 {
+    font-size: 43px;
+  }
+  .q14 {
+    font-size: 42.6px;
+  }
+  .q15 {
+    font-size: 42.2px;
+  }
+  .q16 {
+    font-size: 41.8px;
+  }
+  .q17 {
+    font-size: 41.4px;
+  }
+  .q18 {
+    font-size: 41px;
+  }
+  .q19 {
+    font-size: 40.6px;
+  }
+  .q20 {
+    font-size: 40.2px;
+  }
+  .q21 {
+    font-size: 39.8px;
+  }
+  .q22 {
+    font-size: 39.4px;
+  }
+  .q23 {
+    font-size: 39px;
+  }
+  .q24 {
+    font-size: 38.6px;
+  }
+  .q25 {
+    font-size: 38.2px;
+  }
+  .q26 {
+    font-size: 37.8px;
+  }
+  .q27 {
+    font-size: 37.4px;
+  }
+  .q28 {
+    font-size: 37px;
+  }
+  .q29 {
+    font-size: 36.6px;
+  }
+  .q30 {
+    font-size: 36.2px;
+  }
+  .q31 {
+    font-size: 35.8px;
+  }
+  .q32 {
+    font-size: 35.4px;
+  }
+  .q33 {
+    font-size: 35px;
+  }
+  .q34 {
+    font-size: 34.6px;
+  }
+  .q35 {
+    font-size: 34.2px;
+  }
+  .q36 {
+    font-size: 33.8px;
+  }
+  .q37 {
+    font-size: 33.4px;
+  }
+  .q38 {
+    font-size: 33px;
+  }
+  .q39 {
+    font-size: 32.6px;
+  }
+  .q40 {
+    font-size: 32.2px;
+  }
+  .q41 {
+    font-size: 31.8px;
+  }
+  .q42 {
+    font-size: 31.4px;
+  }
+  .q43 {
+    font-size: 31px;
+  }
+  .q44 {
+    font-size: 30.6px;
+  }
+  .q45 {
+    font-size: 30.2px;
+  }
+  .q46 {
+    font-size: 29.8px;
+  }
+  .q47 {
+    font-size: 29.4px;
+  }
+  .q48 {
+    font-size: 29px;
+  }
+  .q49 {
+    font-size: 28.6px;
+  }
+  .q50 {
+    font-size: 28.2px;
+  }
+  .q51 {
+    font-size: 27.8px;
+  }
+  .q52 {
+    font-size: 27.4px;
+  }
+  .q53 {
+    font-size: 27px;
+  }
+  .q54 {
+    font-size: 26.6px;
+  }
+  .q55 {
+    font-size: 26.2px;
+  }
+  .q56 {
+    font-size: 25.8px;
+  }
+  .q57 {
+    font-size: 25.4px;
+  }
+  .q58 {
+    font-size: 25px;
+  }
+  .q59 {
+    font-size: 24.6px;
+  }
+  .q60 {
+    font-size: 24.2px;
+  }
+  .q61 {
+    font-size: 23.8px;
+  }
+  .q62 {
+    font-size: 23.4px;
+  }
+  .q63 {
+    font-size: 23px;
+  }
+  .q64 {
+    font-size: 22.6px;
+  }
+  .q65 {
+    font-size: 22.2px;
+  }
+  .q66 {
+    font-size: 21.8px;
+  }
+  .q67 {
+    font-size: 21.4px;
+  }
+  .q68 {
+    font-size: 21px;
+  }
+  .q69 {
+    font-size: 20.6px;
+  }
+  .q70 {
+    font-size: 20.2px;
+  }
+  .q71 {
+    font-size: 19.8px;
+  }
+  .q72 {
+    font-size: 19.4px;
+  }
+  .q73 {
+    font-size: 19px;
+  }
+  .q74 {
+    font-size: 18.6px;
+  }
+  .q75 {
+    font-size: 18.2px;
+  }
+  .q76 {
+    font-size: 17.8px;
+  }
   .a-wrapper {
     margin-left: -40px;
   }
-  .a img {
+  .image {
     max-width: 280px;
   }
   .effect {
