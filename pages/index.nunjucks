@@ -18,13 +18,13 @@
         {% for row in rows %}
         <div class="item">
           <li id="{{loop.index}}" class="q q{{loop.index}} js-question" data-toggle="collapse" data-target="#a{{loop.index}}" data-question-number="{{loop.index}}">{{row.question}}</li>
-          <div class="a-wrapper collapse" id="a{{loop.index}}">
+          <div class="a-wrapper collapse js-answer" id="a{{loop.index}}">
             <div class="a a{{loop.index}}">
               {{row.answer|safe}}
             </div>
           </div>
           <div class="js-effect{{loop.index}} hidden effect">
-            <img class=effect-img src="./assets/img/swoosh2.svg">
+            <img class="effect-img" src="./assets/img/swoosh4.svg">
             <img class="effect-img--slam hidden" src="./assets/img/slam2.svg">
           </div>
         </div>
