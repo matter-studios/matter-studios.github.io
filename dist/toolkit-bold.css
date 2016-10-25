@@ -9060,6 +9060,9 @@ h1.block-title {
 .q76 {
   font-size: 31px;
 }
+.q77 {
+  font-size: 30px;
+}
 .a-wrapper {
   margin-left: -100px;
 }
@@ -9235,6 +9238,13 @@ h1.block-title {
   height: 600px;
   display: block;
   border: none;
+}
+.youtubeVideo {
+  width: 520px;
+  height: 315px;
+}
+.a63 {
+  text-align: center;
 }
 /*
  * Mobile styles
@@ -9465,6 +9475,9 @@ h1.block-title {
   .q76 {
     font-size: 17.8px;
   }
+  .q77 {
+    font-size: 17.4px;
+  }
   .a-wrapper {
     margin-left: -40px;
   }
@@ -9486,6 +9499,14 @@ h1.block-title {
   }
   .gif {
     width: 100%;
+  }
+  .questionForm {
+    height: 50vh;
+  }
+  .youtubeVideo {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
   }
 }
 @media (max-width: 320px) {
