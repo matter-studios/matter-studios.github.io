@@ -2345,7 +2345,11 @@ if (questions.length) {
 
   for (var i = 0; i < questions.length; i++) {
     var q = questions[i]
-    q.addEventListener('click', toggleAnswer)
+    if (i < 10) {
+      q.addEventListener('click', toggleAnswer)
+    } else if (i % 5 == 0) {
+      q.addEventListener('click', toggleAnswer)
+    }
   }
 
   function toggleAnswer() {
@@ -2363,14 +2367,7 @@ if (questions.length) {
 
   function addEffect(svgDiv, questionNumber) {
     var svgList = [
-      'poof',
-      'pop',
-      'sparkles',
-      'swoosh1',
-      'swoosh2',
-      'swoosh3',
-      'swoosh4',
-      'swoosh5'
+      'swoosh4'
     ]
 
     var svgId = svgList[Math.floor(Math.random() * svgList.length)]
