@@ -9104,41 +9104,111 @@ h1.block-title {
   height: 600px;
 }
 .effect-img {
-  animation: pop 900ms ease;
-  -webkit-animation: pop 900ms ease;
+  animation: pop 700ms ease;
+  -webkit-animation: pop 700ms ease;
+  opacity: 0;
+}
+.effect-img--slam {
+  -webkit-animation: slam 700ms ease;
+          animation: slam 700ms ease;
+  opacity: 0;
+}
+@-webkit-keyframes slam {
+  10% {
+    -webkit-transform: rotateY(90) scale(1.2);
+            transform: rotateY(90) scale(1.2);
+    opacity: 0.3;
+  }
+  30% {
+    -webkit-transform: rotateY(185) scale(2);
+            transform: rotateY(185) scale(2);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: rotateY(60) scale 1.5;
+            transform: rotateY(60) scale 1.5;
+    opacity: 0.6;
+  }
+  70% {
+    -webkit-transform: rotateY(20) scale(0.8);
+            transform: rotateY(20) scale(0.8);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: rotateY(0) scale(0.3);
+            transform: rotateY(0) scale(0.3);
+    opacity: 0.1;
+  }
+}
+@keyframes slam {
+  10% {
+    -webkit-transform: rotateY(90) scale(1.2);
+            transform: rotateY(90) scale(1.2);
+    opacity: 0.3;
+  }
+  30% {
+    -webkit-transform: rotateY(185) scale(1.5);
+            transform: rotateY(185) scale(1.5);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: rotateY(60) scale 1.1;
+            transform: rotateY(60) scale 1.1;
+    opacity: 0.6;
+  }
+  70% {
+    -webkit-transform: rotateY(20) scale(0.6);
+            transform: rotateY(20) scale(0.6);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: rotateY(0) scale(0.1);
+            transform: rotateY(0) scale(0.1);
+    opacity: 0.1;
+  }
 }
 @-webkit-keyframes pop {
   20% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
+    opacity: 0.2;
   }
-  50% {
+  30% {
     -webkit-transform: scale(2);
             transform: scale(2);
+    opacity: 0.8;
   }
-  90% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.5;
   }
   100% {
-    display: none;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0.2;
   }
 }
 @keyframes pop {
   20% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
+    opacity: 0.2;
   }
-  50% {
+  30% {
     -webkit-transform: scale(2);
             transform: scale(2);
+    opacity: 0.8;
   }
-  90% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0.5;
   }
   100% {
-    display: none;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0.2;
   }
 }
 .pitchForm {

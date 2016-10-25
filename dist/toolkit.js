@@ -2377,11 +2377,18 @@ function addEffect(svgDiv, questionNumber) {
 }
 
 function removeEffect(svgDiv, questionNumber) {
-  svgDiv.firstElementChild.setAttribute('src', 'assets/img/slam2.svg')
-  setTimeout(function () {
+  var openEffectDiv = svgDiv.firstElementChild
+  var closeEffectDiv = svgDiv.querySelector('.effect-img--slam')
+
+  openEffectDiv.classList.add('hidden')
+  closeEffectDiv.classList.remove('hidden')
+
+  closeEffectDiv.addEventListener('animationend', function () {
     svgDiv.classList.add('hidden')
+    openEffectDiv.classList.remove('hidden')
+    closeEffectDiv.classList.add('hidden')
     svgDiv.firstElementChild.removeAttribute('src')
-  }, 300)
+  }, false)
 }
 
 +function ($) {
