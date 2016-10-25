@@ -1,0 +1,9 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="block block-fill-height">
+      <div class="gif-wrapper block-xs-middle">
+        <img class="js-gif" src="./assets/img/getalong1.gif">
+      </div>
+  </div>
+{% endblock %}
