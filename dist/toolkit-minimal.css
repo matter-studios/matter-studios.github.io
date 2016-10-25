@@ -9217,6 +9217,12 @@ h1.block-title {
 .gif-wrapper {
   text-align: center;
 }
+.gif {
+  width: 50%;
+}
+.block--result {
+  text-align: center;
+}
 .pitchForm {
   display: block;
   width: 100%;

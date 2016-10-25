@@ -17,7 +17,7 @@
       <ol class="itemList">
         {% for row in rows %}
         <div class="item">
-          <li class="q q{{loop.index}} js-question" data-toggle="collapse" data-target="#a{{loop.index}}" data-question-number="{{loop.index}}">{{row.question}}</li>
+          <li id="{{loop.index}}" class="q q{{loop.index}} js-question" data-toggle="collapse" data-target="#a{{loop.index}}" data-question-number="{{loop.index}}">{{row.question}}</li>
           <div class="a-wrapper collapse" id="a{{loop.index}}">
             <div class="a a{{loop.index}}">
               {{row.answer|safe}}

@@ -1,9 +1,14 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-  <div class="block block-fill-height">
-      <div class="gif-wrapper block-xs-middle">
-        <img class="js-gif" src="./assets/img/getalong1.gif">
+  <div class="block block-fill-height block--result">
+      <div class="block-xs-middle">
+          <h1>We're going to get along</h1>
+          <div class="gif-wrapper">
+            <img class="gif js-gif" src="./assets/img/getalong1.gif">
+          </div>
+
+          <h2><a class="link" href="http://matter.com/site#63">Back to FAQ</h2>
       </div>
   </div>
 {% endblock %}
