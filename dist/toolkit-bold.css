@@ -9149,12 +9149,17 @@ h1.block-title {
 }
 .social-link--facebook {
   width: 25px;
+  margin-left: -8px;
 }
 .social-link--youtube {
   width: 36px;
 }
+.social-link--medium {
+  margin-left: -5px;
+}
 .social-link--instagram {
   width: 25px;
+  margin-left: -6px;
 }
 .item {
   position: relative;
