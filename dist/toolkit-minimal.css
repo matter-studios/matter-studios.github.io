@@ -9089,15 +9089,55 @@ h1.block-title {
   color: #f0f;
   position: relative;
 }
-.link:hover:after {
-  position: absolute;
-  content: url(../assets/img/wow.svg);
+.link.js-pitch {
+  position: relative;
+}
+.link.js-pitch:hover::after {
+  content: '';
+  background: url(../assets/img/wow.svg);
   display: block;
-  top: -55px;
-  left: 80px;
-  width: 30%;
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
+  -webkit-animation: flyAway 500ms ease-out;
+          animation: flyAway 500ms ease-out;
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  height: 60px;
+  width: 100%;
+  opacity: 0;
+}
+@-webkit-keyframes flyAway {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(5px, -5px) rotate(0deg);
+            transform: translate(5px, -5px) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(222px, -500px) rotate(90deg);
+            transform: translate(222px, -500px) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(600px, -800px) rotate(130deg);
+            transform: translate(600px, -800px) rotate(130deg);
+  }
+}
+@keyframes flyAway {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(5px, -5px) rotate(0deg);
+            transform: translate(5px, -5px) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(222px, -500px) rotate(90deg);
+            transform: translate(222px, -500px) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(600px, -800px) rotate(130deg);
+            transform: translate(600px, -800px) rotate(130deg);
+  }
 }
 .social-links {
   margin-top: 10px;
@@ -9142,13 +9182,16 @@ h1.block-title {
 .pitchHelper {
   position: absolute;
   right: 0;
-  width: 50px;
+  width: 20px;
   min-height: 1000%;
   background-color: black;
   opacity: 0;
 }
 .pitchHelper.hover {
   opacity: 1;
+  width: 70px;
+  -webkit-animation: grow 500ms ease;
+          animation: grow 500ms ease;
 }
 .pitchHelper.hover:before {
   content: url('../assets/img/exclaim_mark.svg');
@@ -9166,6 +9209,22 @@ h1.block-title {
   top: 150px;
   right: 0;
   width: 100px;
+}
+@-webkit-keyframes grow {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 70px;
+  }
+}
+@keyframes grow {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 70px;
+  }
 }
 @-webkit-keyframes slam {
   10% {
