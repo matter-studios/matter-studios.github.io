@@ -9288,8 +9288,8 @@ h1.block-title {
 }
 @-webkit-keyframes pop {
   20% {
-    -webkit-transform: scale(0.5) translate(-5px, 5px);
-            transform: scale(0.5) translate(-5px, 5px);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     opacity: 1;
   }
   30% {
@@ -9303,15 +9303,15 @@ h1.block-title {
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(0.4) translate(-100px, 1000px);
-            transform: scale(0.4) translate(-100px, 1000px);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
     opacity: 1;
   }
 }
 @keyframes pop {
   20% {
-    -webkit-transform: scale(0.5) translate(-5px, 5px);
-            transform: scale(0.5) translate(-5px, 5px);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
     opacity: 1;
   }
   30% {
@@ -9325,8 +9325,8 @@ h1.block-title {
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(0.4) translate(-100px, 1000px);
-            transform: scale(0.4) translate(-100px, 1000px);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
     opacity: 1;
   }
 }
