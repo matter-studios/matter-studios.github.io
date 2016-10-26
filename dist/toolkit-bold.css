@@ -9573,6 +9573,12 @@ h1.block-title {
   }
 }
 @media (max-width: 767px) {
+  .effect {
+    width: 300px;
+    position: absolute;
+    top: -100px;
+    right: 100px;
+  }
   .itemList {
     -webkit-padding-start: 70px;
   }
@@ -9818,7 +9824,7 @@ h1.block-title {
     width: 100%;
   }
   .pitchForm {
-    height: 80vh;
+    height: 90vh;
   }
   .gif {
     width: 100%;
