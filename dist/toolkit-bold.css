@@ -9297,6 +9297,222 @@ h1.block-title {
 /*
  * Mobile styles
  */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  h1.block-title {
+    font-size: 250px;
+  }
+  .q {
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+  .q9 {
+    font-size: 44.6px;
+  }
+  .q10 {
+    font-size: 44.2px;
+  }
+  .q11 {
+    font-size: 43.8px;
+  }
+  .q12 {
+    font-size: 43.4px;
+  }
+  .q13 {
+    font-size: 43px;
+  }
+  .q14 {
+    font-size: 42.6px;
+  }
+  .q15 {
+    font-size: 42.2px;
+  }
+  .q16 {
+    font-size: 41.8px;
+  }
+  .q17 {
+    font-size: 41.4px;
+  }
+  .q18 {
+    font-size: 41px;
+  }
+  .q19 {
+    font-size: 40.6px;
+  }
+  .q20 {
+    font-size: 40.2px;
+  }
+  .q21 {
+    font-size: 39.8px;
+  }
+  .q22 {
+    font-size: 39.4px;
+  }
+  .q23 {
+    font-size: 39px;
+  }
+  .q24 {
+    font-size: 38.6px;
+  }
+  .q25 {
+    font-size: 38.2px;
+  }
+  .q26 {
+    font-size: 37.8px;
+  }
+  .q27 {
+    font-size: 37.4px;
+  }
+  .q28 {
+    font-size: 37px;
+  }
+  .q29 {
+    font-size: 36.6px;
+  }
+  .q30 {
+    font-size: 36.2px;
+  }
+  .q31 {
+    font-size: 35.8px;
+  }
+  .q32 {
+    font-size: 35.4px;
+  }
+  .q33 {
+    font-size: 35px;
+  }
+  .q34 {
+    font-size: 34.6px;
+  }
+  .q35 {
+    font-size: 34.2px;
+  }
+  .q36 {
+    font-size: 33.8px;
+  }
+  .q37 {
+    font-size: 33.4px;
+  }
+  .q38 {
+    font-size: 33px;
+  }
+  .q39 {
+    font-size: 32.6px;
+  }
+  .q40 {
+    font-size: 32.2px;
+  }
+  .q41 {
+    font-size: 31.8px;
+  }
+  .q42 {
+    font-size: 31.4px;
+  }
+  .q43 {
+    font-size: 31px;
+  }
+  .q44 {
+    font-size: 30.6px;
+  }
+  .q45 {
+    font-size: 30.2px;
+  }
+  .q46 {
+    font-size: 29.8px;
+  }
+  .q47 {
+    font-size: 29.4px;
+  }
+  .q48 {
+    font-size: 29px;
+  }
+  .q49 {
+    font-size: 28.6px;
+  }
+  .q50 {
+    font-size: 28.2px;
+  }
+  .q51 {
+    font-size: 27.8px;
+  }
+  .q52 {
+    font-size: 27.4px;
+  }
+  .q53 {
+    font-size: 27px;
+  }
+  .q54 {
+    font-size: 26.6px;
+  }
+  .q55 {
+    font-size: 26.2px;
+  }
+  .q56 {
+    font-size: 25.8px;
+  }
+  .q57 {
+    font-size: 25.4px;
+  }
+  .q58 {
+    font-size: 25px;
+  }
+  .q59 {
+    font-size: 24.6px;
+  }
+  .q60 {
+    font-size: 24.2px;
+  }
+  .q61 {
+    font-size: 23.8px;
+  }
+  .q62 {
+    font-size: 23.4px;
+  }
+  .q63 {
+    font-size: 23px;
+  }
+  .q64 {
+    font-size: 22.6px;
+  }
+  .q65 {
+    font-size: 22.2px;
+  }
+  .q66 {
+    font-size: 21.8px;
+  }
+  .q67 {
+    font-size: 21.4px;
+  }
+  .q68 {
+    font-size: 21px;
+  }
+  .q69 {
+    font-size: 20.6px;
+  }
+  .q70 {
+    font-size: 20.2px;
+  }
+  .q71 {
+    font-size: 19.8px;
+  }
+  .q72 {
+    font-size: 19.4px;
+  }
+  .q73 {
+    font-size: 19px;
+  }
+  .q74 {
+    font-size: 18.6px;
+  }
+  .q75 {
+    font-size: 18.2px;
+  }
+  .q76 {
+    font-size: 17.8px;
+  }
+  .q77 {
+    font-size: 17.4px;
+  }
+}
 @media (max-width: 767px) {
   .itemList {
     -webkit-padding-start: 70px;
@@ -9574,6 +9790,231 @@ h1.block-title {
     -webkit-padding-start: 50px;
   }
 }
+@media (min-width: 1860px) {
+  .container {
+    width: 1600px;
+  }
+  h1.block-title {
+    font-size: 680px;
+  }
+  .q {
+    font-size: 120px;
+  }
+  .q9 {
+    font-size: 118px;
+  }
+  .q10 {
+    font-size: 117px;
+  }
+  .q11 {
+    font-size: 116px;
+  }
+  .q12 {
+    font-size: 115px;
+  }
+  .q13 {
+    font-size: 114px;
+  }
+  .q14 {
+    font-size: 113px;
+  }
+  .q15 {
+    font-size: 112px;
+  }
+  .q16 {
+    font-size: 111px;
+  }
+  .q17 {
+    font-size: 110px;
+  }
+  .q18 {
+    font-size: 109px;
+  }
+  .q19 {
+    font-size: 108px;
+  }
+  .q20 {
+    font-size: 107px;
+  }
+  .q21 {
+    font-size: 106px;
+  }
+  .q22 {
+    font-size: 105px;
+  }
+  .q23 {
+    font-size: 104px;
+  }
+  .q24 {
+    font-size: 103px;
+  }
+  .q25 {
+    font-size: 102px;
+  }
+  .q26 {
+    font-size: 101px;
+  }
+  .q27 {
+    font-size: 100px;
+  }
+  .q28 {
+    font-size: 99px;
+  }
+  .q29 {
+    font-size: 98px;
+  }
+  .q30 {
+    font-size: 97px;
+  }
+  .q31 {
+    font-size: 96px;
+  }
+  .q32 {
+    font-size: 95px;
+  }
+  .q33 {
+    font-size: 94px;
+  }
+  .q34 {
+    font-size: 93px;
+  }
+  .q35 {
+    font-size: 92px;
+  }
+  .q36 {
+    font-size: 91px;
+  }
+  .q37 {
+    font-size: 90px;
+  }
+  .q38 {
+    font-size: 89px;
+  }
+  .q39 {
+    font-size: 88px;
+  }
+  .q40 {
+    font-size: 87px;
+  }
+  .q41 {
+    font-size: 86px;
+  }
+  .q42 {
+    font-size: 85px;
+  }
+  .q43 {
+    font-size: 84px;
+  }
+  .q44 {
+    font-size: 83px;
+  }
+  .q45 {
+    font-size: 82px;
+  }
+  .q46 {
+    font-size: 81px;
+  }
+  .q47 {
+    font-size: 80px;
+  }
+  .q48 {
+    font-size: 79px;
+  }
+  .q49 {
+    font-size: 78px;
+  }
+  .q50 {
+    font-size: 77px;
+  }
+  .q51 {
+    font-size: 76px;
+  }
+  .q52 {
+    font-size: 75px;
+  }
+  .q53 {
+    font-size: 74px;
+  }
+  .q54 {
+    font-size: 73px;
+  }
+  .q55 {
+    font-size: 72px;
+  }
+  .q56 {
+    font-size: 71px;
+  }
+  .q57 {
+    font-size: 70px;
+  }
+  .q58 {
+    font-size: 69px;
+  }
+  .q59 {
+    font-size: 68px;
+  }
+  .q60 {
+    font-size: 67px;
+  }
+  .q61 {
+    font-size: 66px;
+  }
+  .q62 {
+    font-size: 65px;
+  }
+  .q63 {
+    font-size: 64px;
+  }
+  .q64 {
+    font-size: 63px;
+  }
+  .q65 {
+    font-size: 62px;
+  }
+  .q66 {
+    font-size: 61px;
+  }
+  .q67 {
+    font-size: 60px;
+  }
+  .q68 {
+    font-size: 59px;
+  }
+  .q69 {
+    font-size: 58px;
+  }
+  .q70 {
+    font-size: 57px;
+  }
+  .q71 {
+    font-size: 56px;
+  }
+  .q72 {
+    font-size: 55px;
+  }
+  .q73 {
+    font-size: 54px;
+  }
+  .q74 {
+    font-size: 53px;
+  }
+  .q75 {
+    font-size: 52px;
+  }
+  .q76 {
+    font-size: 51px;
+  }
+  .q77 {
+    font-size: 50px;
+  }
+  .a {
+    font-size: 80px;
+  }
+  .effect {
+    right: 50%;
+    top: -100px;
+  }
+}
 @media (min-width: 2560px) {
   .container {
     width: 2300px;
@@ -9583,6 +10024,213 @@ h1.block-title {
   }
   .q {
     font-size: 120px;
+  }
+  .q9 {
+    font-size: 118px;
+  }
+  .q10 {
+    font-size: 117px;
+  }
+  .q11 {
+    font-size: 116px;
+  }
+  .q12 {
+    font-size: 115px;
+  }
+  .q13 {
+    font-size: 114px;
+  }
+  .q14 {
+    font-size: 113px;
+  }
+  .q15 {
+    font-size: 112px;
+  }
+  .q16 {
+    font-size: 111px;
+  }
+  .q17 {
+    font-size: 110px;
+  }
+  .q18 {
+    font-size: 109px;
+  }
+  .q19 {
+    font-size: 108px;
+  }
+  .q20 {
+    font-size: 107px;
+  }
+  .q21 {
+    font-size: 106px;
+  }
+  .q22 {
+    font-size: 105px;
+  }
+  .q23 {
+    font-size: 104px;
+  }
+  .q24 {
+    font-size: 103px;
+  }
+  .q25 {
+    font-size: 102px;
+  }
+  .q26 {
+    font-size: 101px;
+  }
+  .q27 {
+    font-size: 100px;
+  }
+  .q28 {
+    font-size: 99px;
+  }
+  .q29 {
+    font-size: 98px;
+  }
+  .q30 {
+    font-size: 97px;
+  }
+  .q31 {
+    font-size: 96px;
+  }
+  .q32 {
+    font-size: 95px;
+  }
+  .q33 {
+    font-size: 94px;
+  }
+  .q34 {
+    font-size: 93px;
+  }
+  .q35 {
+    font-size: 92px;
+  }
+  .q36 {
+    font-size: 91px;
+  }
+  .q37 {
+    font-size: 90px;
+  }
+  .q38 {
+    font-size: 89px;
+  }
+  .q39 {
+    font-size: 88px;
+  }
+  .q40 {
+    font-size: 87px;
+  }
+  .q41 {
+    font-size: 86px;
+  }
+  .q42 {
+    font-size: 85px;
+  }
+  .q43 {
+    font-size: 84px;
+  }
+  .q44 {
+    font-size: 83px;
+  }
+  .q45 {
+    font-size: 82px;
+  }
+  .q46 {
+    font-size: 81px;
+  }
+  .q47 {
+    font-size: 80px;
+  }
+  .q48 {
+    font-size: 79px;
+  }
+  .q49 {
+    font-size: 78px;
+  }
+  .q50 {
+    font-size: 77px;
+  }
+  .q51 {
+    font-size: 76px;
+  }
+  .q52 {
+    font-size: 75px;
+  }
+  .q53 {
+    font-size: 74px;
+  }
+  .q54 {
+    font-size: 73px;
+  }
+  .q55 {
+    font-size: 72px;
+  }
+  .q56 {
+    font-size: 71px;
+  }
+  .q57 {
+    font-size: 70px;
+  }
+  .q58 {
+    font-size: 69px;
+  }
+  .q59 {
+    font-size: 68px;
+  }
+  .q60 {
+    font-size: 67px;
+  }
+  .q61 {
+    font-size: 66px;
+  }
+  .q62 {
+    font-size: 65px;
+  }
+  .q63 {
+    font-size: 64px;
+  }
+  .q64 {
+    font-size: 63px;
+  }
+  .q65 {
+    font-size: 62px;
+  }
+  .q66 {
+    font-size: 61px;
+  }
+  .q67 {
+    font-size: 60px;
+  }
+  .q68 {
+    font-size: 59px;
+  }
+  .q69 {
+    font-size: 58px;
+  }
+  .q70 {
+    font-size: 57px;
+  }
+  .q71 {
+    font-size: 56px;
+  }
+  .q72 {
+    font-size: 55px;
+  }
+  .q73 {
+    font-size: 54px;
+  }
+  .q74 {
+    font-size: 53px;
+  }
+  .q75 {
+    font-size: 52px;
+  }
+  .q76 {
+    font-size: 51px;
+  }
+  .q77 {
+    font-size: 50px;
   }
   .a {
     font-size: 80px;

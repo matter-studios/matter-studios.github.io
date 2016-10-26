@@ -2418,9 +2418,7 @@ if (pitchHelper) {
 }
 var pitchLinks = document.getElementsByClassName('js-pitch')
 if (pitchLinks.length) {
-  debugger
   for (var k = 0; k < pitchLinks.length; k++) {
-    debugger
     pitchLinks[k].addEventListener('mouseover', function () {
       pitchHelper.classList.add('hover')
     })
