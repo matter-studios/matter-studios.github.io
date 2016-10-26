@@ -9078,6 +9078,9 @@ h1.block-title {
 .image {
   width: 100%;
 }
+.image--starterpack {
+  cursor: pointer;
+}
 .link {
   color: #f0f;
   text-decoration: underline;
@@ -9280,7 +9283,7 @@ h1.block-title {
     top: 0;
   }
   .q {
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 5px;
   }
   .a {

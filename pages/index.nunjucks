@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="js-effect{{loop.index}} hidden effect">
-            <img class="effect-img" src="./assets/img/swoosh4.svg">
+            <img class="effect-img">
             <img class="effect-img--slam hidden" src="./assets/img/slam2.svg">
           </div>
         </div>
