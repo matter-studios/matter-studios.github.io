@@ -9122,8 +9122,8 @@ h1.block-title {
 .effect {
   width: 300px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -100px;
+  right: -50px;
 }
 .game {
   width: 800px;
@@ -9138,6 +9138,34 @@ h1.block-title {
   -webkit-animation: slam 700ms ease;
           animation: slam 700ms ease;
   opacity: 0;
+}
+.pitchHelper {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  min-height: 1000%;
+  background-color: black;
+  opacity: 0;
+}
+.pitchHelper.hover {
+  opacity: 1;
+}
+.pitchHelper.hover:before {
+  content: url('../assets/img/exclaim_mark.svg');
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 100px;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+.pitchHelper.hover:after {
+  content: url('../assets/img/wow.svg');
+  position: fixed;
+  top: 150px;
+  right: 0;
+  width: 100px;
 }
 @-webkit-keyframes slam {
   10% {

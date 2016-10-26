@@ -2406,6 +2406,31 @@ function removeEffect(svgDiv, questionNumber) {
 }
 
 
+var pitchHelper = document.getElementsByClassName('js-pitchHelper')[0]
+if (pitchHelper) {
+  pitchHelper.addEventListener('mouseover', function () {
+    pitchHelper.classList.add('hover')
+  })
+
+  pitchHelper.addEventListener('mouseleave', function () {
+    pitchHelper.classList.remove('hover')
+  })
+}
+var pitchLinks = document.getElementsByClassName('js-pitch')
+if (pitchLinks.length) {
+  debugger
+  for (var k = 0; k < pitchLinks.length; k++) {
+    debugger
+    pitchLinks[k].addEventListener('mouseover', function () {
+      pitchHelper.classList.add('hover')
+    })
+
+    pitchLinks[k].addEventListener('mouseleave', function () {
+      pitchHelper.classList.remove('hover')
+    })
+  }
+}
+
 // GET ALONG GIF PAGE
 
 var gifList = [
