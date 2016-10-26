@@ -2354,9 +2354,9 @@ if (questions.length) {
 
   for (var i = 0; i < questions.length; i++) {
     var q = questions[i]
-    if (i < 10) {
+    if (i < 6) {
       q.addEventListener('click', toggleAnswer)
-    } else if (i % 5 == 0) {
+    } else if (i % 12 == 0) {
       q.addEventListener('click', toggleAnswer)
     }
 
