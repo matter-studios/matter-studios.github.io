@@ -2,6 +2,8 @@
 
 {% block content %}
 
+<a href="/pitch.html"><div class="pitchHelper js-pitchHelper"></div></a>
+
 <div class="block">
   <div class="block-sm-middle block-xs-top">
     <div class="matter-logo"></div>
@@ -10,8 +12,6 @@
     </h1>
   </div>
 </div>
-
-<a href="/pitch.html"><div class="pitchHelper js-pitchHelper"></div></a>
 
 <div class="container faq">
   <div class="row">

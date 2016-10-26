@@ -2340,6 +2340,14 @@ var questions = document.getElementsByClassName('js-question')
 var answers = document.getElementsByClassName('js-answer')
 var audio = new Audio('./assets/audio/matter-studios.wav')
 var starterPack = document.getElementsByClassName('image--starterpack')[0]
+var pitchHelper = document.getElementsByClassName('js-pitchHelper')[0]
+
+if (pitchHelper) {
+  var newHeight = $('.container').height() + $('.block').height() - 80
+  $(pitchHelper).css({
+    'height': newHeight + 'px'
+  })
+}
 
 if (starterPack) {
   starterPack.addEventListener('click', function () {
@@ -2382,7 +2390,16 @@ function toggleAnswer() {
 
 function addEffect(svgDiv, questionNumber) {
   var svgList = [
-    'swoosh4'
+    'swoosh4',
+    'swoosh4',
+    'swoosh4',
+    'swoosh4',
+    'swoosh4',
+    'swoosh4',
+    'swoosh3',
+    'swoosh3',
+    'poof',
+    'poof'
   ]
 
   var svgId = svgList[Math.floor(Math.random() * svgList.length)]
@@ -2391,9 +2408,16 @@ function addEffect(svgDiv, questionNumber) {
 }
 
 function removeEffect(svgDiv, questionNumber) {
+  var svgList2 = [
+    'slam1',
+    'slam2'
+  ]
+
+  var svgId2 = svgList2[Math.floor(Math.random() * svgList2.length)]
   var openEffectDiv = svgDiv.firstElementChild
   var closeEffectDiv = svgDiv.querySelector('.effect-img--slam')
 
+  closeEffectDiv.setAttribute('src', 'assets/img/' + svgId + '.svg')
   openEffectDiv.classList.add('hidden')
   closeEffectDiv.classList.remove('hidden')
 
