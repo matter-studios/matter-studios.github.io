@@ -2417,7 +2417,7 @@ function removeEffect(svgDiv, questionNumber) {
   var openEffectDiv = svgDiv.firstElementChild
   var closeEffectDiv = svgDiv.querySelector('.effect-img--slam')
 
-  closeEffectDiv.setAttribute('src', 'assets/img/' + svgId + '.svg')
+  closeEffectDiv.setAttribute('src', 'assets/img/' + svgId2 + '.svg')
   openEffectDiv.classList.add('hidden')
   closeEffectDiv.classList.remove('hidden')
 
