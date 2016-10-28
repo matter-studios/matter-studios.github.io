@@ -9836,9 +9836,7 @@ h1.block-title {
     height: 50vh;
   }
   .youtubeVideo {
-    width: 70%;
-    height: auto;
-    margin-top: 20px;
+    display: none;
   }
 }
 @media (max-width: 320px) {
