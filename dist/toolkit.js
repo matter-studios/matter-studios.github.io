@@ -2339,7 +2339,8 @@
 var questions = document.getElementsByClassName('js-question')
 var answers = document.getElementsByClassName('js-answer')
 var audio = new Audio('./assets/audio/matter-studios.wav')
-var starterPack = document.getElementsByClassName('image--starterpack')[0]
+var starterPackDesktop = document.getElementsByClassName('image--starterpack')[0]
+var starterPackMobile = document.getElementsByClassName('image--starterpack-theme')[0]
 var pitchHelper = document.getElementsByClassName('js-pitchHelper')[0]
 
 if (pitchHelper) {
@@ -2349,8 +2350,14 @@ if (pitchHelper) {
   })
 }
 
-if (starterPack) {
-  starterPack.addEventListener('click', function () {
+if (starterPackDesktop) {
+  starterPackDesktop.addEventListener('click', function () {
+    audio.play()
+  })
+}
+
+if (starterPackMobile) {
+  starterPackMobile.addEventListener('click', function () {
     audio.play()
   })
 }
