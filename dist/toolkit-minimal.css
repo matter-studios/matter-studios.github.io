@@ -9839,7 +9839,7 @@ h1.block-title {
     width: 100%;
   }
   .questionForm {
-    height: 50vh;
+    display: none;
   }
   .youtubeVideo {
     display: none;
