@@ -1,0 +1,5 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <iframe id="gDoc" class="gDoc" src="https://docs.google.com/document/d/1u9lyzHkYTXTIwQgLohcJA2qGP6NkUZ_rLsqfQc8sr9E/edit"></iframe>
+{% endblock %}
