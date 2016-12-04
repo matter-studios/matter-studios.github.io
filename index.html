@@ -17,7 +17,8 @@
 
     <title>Matter Studios</title>
 
-    <link href="dist/toolkit-minimal.min.css" rel="stylesheet">
+    
+    <link href="dist/toolkit-minimal.css" rel="stylesheet">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     <link href="http://webfonts.radimpesko.com/RP-W-57dbb7afe4b95e2def000016.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
@@ -126,7 +127,7 @@
           <li id="6" class="q q6 js-question" data-toggle="collapse" data-target="#a6" data-question-number="6">What if I just want to check out your work?</li>
           <div class="a-wrapper collapse js-answer" id="a6">
             <div class="a a6">
-              We discuss our current projects, events, opportunities, and thoughts on the following digital platforms.
+              Join our <a class="link" href="http://eepurl.com/coPgoD">mailing list</a> for information on current projects, events, and opportunities. We're also on the following digital platforms.
 
 <div class="social-links">
 <a target="_blank" href="https://twitter.com/matterstudios"><img class="social-link social-link--twitter" src="./assets/img/social-twitter.png"></a>
@@ -1091,6 +1092,11 @@ Matter eventually migrated to Medium, where it became the platform’s flagship 
           </div>
         </div>
         
+
+        <form id="submissionBox" method="POST" target="no-target">
+          <input id="questionInput" class="form-control form-control--chromeless" type="text" name="question" placeholder="Got a question you'd like us to answer?" />
+          <button class="btn btn-primary" type="submit">Tell us</button>
+        </form>
       </ol>
     </div>
   </div>
@@ -1100,6 +1106,7 @@ Matter eventually migrated to Medium, where it became the platform’s flagship 
 
     <!-- Include jQuery (required) and the JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="dist/toolkit.min.js"></script>
+    
+    <script src="dist/toolkit.js"></script>
   </body>
 </html>

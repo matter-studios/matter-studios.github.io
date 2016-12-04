@@ -2480,6 +2480,15 @@ var gifEl = document.getElementsByClassName('js-gif')[0]
 
 if (gifEl) gifEl.setAttribute('src', 'assets/img/' + gifId + '.gif')
 
+$('#submissionBox').on('submit', function () {
+  var inputField = encodeURIComponent($('#questionInput').val())
+  var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdkfknhhbT99GIuYA_uRRwX8YsCsR9jnGat_tgnoXA3oiHM7Q/formResponse?entry.647045166='
+  var submitRef = '&submit=Submit'
+  var submitURL = (baseURL + inputField + submitRef)
+  $(this)[0].action=submitURL
+  $('#questionInput').addClass('active')
+})
+
 +function ($) {
   'use strict';
 
