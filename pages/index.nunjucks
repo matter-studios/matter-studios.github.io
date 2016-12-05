@@ -33,8 +33,8 @@
         {% endfor %}
 
         <form id="submissionBox" method="POST" target="no-target">
-          <input id="questionInput" class="form-control form-control--chromeless" type="text" name="question" placeholder="Got a question you'd like us to answer?" />
-          <button class="btn btn-primary" type="submit">Tell us</button>
+          <input id="questionInput" class="form-control form-control--chromeless" type="text" name="question" placeholder="Ask us a question" />
+          <button class="btn btn-primary" type="submit">Submit</button>
         </form>
       </ol>
     </div>
